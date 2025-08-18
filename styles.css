@@ -29,7 +29,6 @@ button:hover {
     justify-content: center;
 }
 
-/* Coluna da esquerda com perfil */
 .left-column {
     flex: 1;
     min-width: 280px;
@@ -53,7 +52,6 @@ button:hover {
     margin-bottom: 15px;
 }
 
-/* Coluna da direita com conteúdo */
 .right-column {
     flex: 2;
     min-width: 300px;
