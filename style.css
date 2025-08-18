@@ -1,75 +1,68 @@
+h1 {
+    color-scheme: yellow;
+    -webkit-text-stroke: 1px red
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: #f8f3e7;
+    background-color: #f1f887;
+
 }
 
-button {
-    margin: 20px;
-    padding: 10px 20px;
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #27ae60;
-}
-
-.container {
+header {
+    gap: 40px;
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 30px;
-    justify-content: center;
 }
 
-/* Coluna da esquerda com perfil */
-.left-column {
-    flex: 1;
-    min-width: 280px;
-    max-width: 350px;
+.banner {
+  display: flex;
+  justify-content: left;
+  gap: 20px; 
+  background: linear-gradient(to right, #8ee087, #1db858);
+  color: white;
+  text-align: right;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 5px solid #c44;
 }
 
-.profile-box {
-    background-color: rgb(247, 155, 127);
-    padding: 20px;
-    border-radius: 10px;
+img {
+    width: 300px;
+    height: auto;
+    display: center;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+.produto {
     text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
 }
-
-.profile-box img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #f6f0ea;
-    margin-bottom: 15px;
+.produto img {
+    max-width: 120px;
+    height: auto;
 }
-
-.right-column {
-    flex: 2;
-    min-width: 300px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+.preco {
+    background: #c00;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    gap: 20px;
 }
-
-.section {
-    margin-bottom: 30px;
-}
-
-.h2 {
-    color: #5c4033;
-    font-size: 22px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #e0cfc0;
-    padding-bottom: 5px;
+.produto span {
+    display: block;
+    font-weight: bold;
+    color: #ff6600;
 }
